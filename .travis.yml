@@ -1,5 +1,10 @@
 language: ruby
 rvm:
-  - 2.6
+- 2.6
 before_install:
-  - gem install bundler
+- gem install bundler
+deploy:
+  provider: heroku
+  api_key:
+    secure: qSyTzAcUxgUZUauKPAHOsJIr+CBo8zY31TgTbVhAo6xerdUqddOkys0cyCQTUTDdXWkI6wX0Jh+ykl82sspXBykFrY/wvgH7crIQBJN292qmrXuCzraJ5u7FpCNXtv6NdJ8qdeIjWnUTfdrh45NR/nAorQcc0TP4m+zbU3UvbJvJiwJna2GFHh3tdkgcikZBwI0Tn03HErDTKcVTtIo8JCQmtPzerudVOcc7wBB6sczO+ormtZo2RCYeIgtnYYenjQgPcuwzau+Mx/ITeWYzZp6oOnNJzxldh1IqGU0nk1gHhSomoQBBLEvL3dwnByPH2TmCkMaw9bVdDdSIDsBZgtq4rqwsH4zSgQYiSMKMhttdhgSr2bgqa1BDaqJhZPXzpelwB5sOsHn0ELY9IUvjqMmbNpounZpJ06ZkQWTGXc/eF3GnyvUXGRXpvPmhCwDabLrGUQWWvsJeiZgIxblZ0RScWaOVzybehVpm1Sei9Iy0CGTOVXGGQgmI3QqFDTL/XB8cx0hrMTjfOHEtXYWYfPnFIU6to0dIPYkpPxx6tiRGSUsn689j3VyA2CfFNt/VmIQdVjVjUrOa7DF5ZCHpZfNvy6cfIMjkmFUI3zsFPK4GLt5nshIzrLh0KzWYHFtJnESYvJf7hl+cSy0R09SaMSJQDh3sMapRr2xjkHD3txA=
+  app: limitless-dawn-47461
