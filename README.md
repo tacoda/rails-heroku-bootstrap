@@ -22,3 +22,27 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Local Development
+
+```sh
+docker-compose up --build
+```
+
+```sh
+docker-compose run web rake db:create
+docker-compose run web rake db:migrate
+```
+
+```sh
+docker-compose run web rails generate controller welcome
+```
+
+```sh
+docker-compose run web bundle exec rails webpacker:install
+docker-compose run web bundle exec rails webpacker:install:react
+```
+
+## Pushing to Heroku
+
+## Using Travis to Automate
