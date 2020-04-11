@@ -45,4 +45,17 @@ docker-compose run web bundle exec rails webpacker:install:react
 
 ## Pushing to Heroku
 
+```sh
+heroku create
+git push heroku master
+heroku run rake db:migrate
+heroku ps:scale web=1
+heroku ps
+heroku open
+heroku logs
+heroku logs --tail
+heroku run rails console
+heroku local
+```
+
 ## Using Travis to Automate
