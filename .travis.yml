@@ -1,8 +1,10 @@
 language: ruby
 rvm:
 - 2.6
-before_install:
-- gem install bundler
+efore_install:
+- docker-compose up --build
+- docker-compose run web bundle exec rails db:create
+- docker-compose run web bundle exec rails db:migrate
 script:
 - docker-compose run web bundle exec rake
 deploy:
