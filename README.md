@@ -58,4 +58,9 @@ heroku run rails console
 heroku local
 ```
 
+```sh
+heroku stack:set container
+git push heroku master
+```
+
 ## Using Travis to Automate
